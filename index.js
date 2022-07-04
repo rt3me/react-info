@@ -61,9 +61,14 @@ function Navbar() {
   );
 }
 
+function MainContent() {
+  return <h1>Information About React</h1>;
+}
+
 ReactDOM.render(
   <div>
     <Navbar />
+    <MainContent />
   </div>,
   document.getElementById("root")
 );
