@@ -72,3 +72,9 @@ ReactDOM.render(
   </div>,
   document.getElementById("root")
 );
+
+// Replace ReactDOM.render with vanilla JS
+const h1 = document.createElement("h1");
+h1.textContent = "This is an h1 element";
+h1.className = "header";
+document.getElementById("root").append(h1);
