@@ -65,12 +65,11 @@ function MainContent() {
   return <h1>Information About React</h1>;
 }
 
-const h1 = document.createElement("h1");
-h1.textContent = "This is an h1 element";
-h1.className = "header";
-console.log(h1);
+const page = (
+  <div>
+    <h1 className="header">This is JSX</h1>
+    <p>This is a paragraph.</p>
+  </div>
+);
 
-const element = <h1 className="header">This is JSX</h1>;
-console.log(element);
-
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(page, document.getElementById("root"));
